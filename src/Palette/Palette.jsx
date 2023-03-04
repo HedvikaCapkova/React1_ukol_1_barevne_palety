@@ -1,10 +1,9 @@
 import React from "react";
-import { palettes } from "../palettes.js";
 import { SchemeColor } from "../SchemeColor/SchemeColor.jsx";
 import "./Palette.css";
 
-export const Palette = () => {
-  return palettes.map(
+export const Palette = ({paletteData}) => {
+  return paletteData.map(
     ({ name, image, attribution, colors, direction, description }) => {
       return (
         <div key={name} className="palette">

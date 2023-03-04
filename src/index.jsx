@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Palette } from "./Palette/Palette.jsx";
+import { palettes } from "./palettes.js";
 import "./style.css";
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
         </header>
       </div>
       <main>
-        <Palette/>
+        <Palette paletteData={palettes}/>
       </main>
       <footer>
         <p>Czechitas, Digitální akademie: Web</p>
