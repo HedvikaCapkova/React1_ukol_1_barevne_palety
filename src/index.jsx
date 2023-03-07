@@ -13,7 +13,7 @@ const App = () => {
         </header>
       </div>
       <main>
-        <Palette paletteData={palettes}/>
+      {palettes.map((palette) => ( <Palette key={palette.name} paletteData={palette}/> ))}
       </main>
       <footer>
         <p>Czechitas, Digitální akademie: Web</p>
